@@ -50,6 +50,7 @@ wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/update/main/vpnprem
 wget -O wlc "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/wlc"
 wget -O info2 "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2"
 
+dos2unix info2
 
 sleep 2
 chmod +x vpnpremium
