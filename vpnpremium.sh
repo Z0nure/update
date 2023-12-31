@@ -72,7 +72,7 @@ chmod +x m-ssws
 chmod +x wlc
 chmod +x info2
 
-if [[ -e /usr/bin/info2 && ! $(grep -qxF '/usr/bin/info2' ~/.bashrc) ]]; then
+if [ -e /usr/bin/info2 ] && ! grep -qxF '/usr/bin/info2' ~/.bashrc; then
     echo '/usr/bin/info2' >> ~/.bashrc
 fi
 cd
