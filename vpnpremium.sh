@@ -72,7 +72,9 @@ chmod +x m-ssws
 chmod +x wlc
 chmod +x info2
 
-echo /usr/bin/info2 >> ~/.bashrc
+if [[ -e /usr/bin/info2 && ! $(grep -qxF '/usr/bin/info2' ~/.bashrc) ]]; then
+    echo '/usr/bin/info2' >> ~/.bashrc
+fi
 cd
 echo -e " [INFO] INDEX FILE HTML UPDATE"
 sleep 2
