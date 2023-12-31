@@ -48,7 +48,7 @@ wget -O m-vmess "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/men
 wget -O m-vless "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/menu/m-vless.sh"
 wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/update/main/vpnpremium.sh"
 wget -O wlc "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/wlc"
-wget -O info "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info"
+wget -O info2 "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2"
 
 
 sleep 2
@@ -69,9 +69,9 @@ chmod +x running
 chmod +x m-system
 chmod +x m-ssws
 chmod +x wlc
-chmod +x info
+chmod +x info2
 
-echo /usr/bin/info >> ~/.bashrc
+echo /usr/bin/info2 >> ~/.bashrc
 cd
 echo -e " [INFO] INDEX FILE HTML UPDATE"
 sleep 2
