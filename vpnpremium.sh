@@ -48,9 +48,9 @@ wget -O m-vmess "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/men
 wget -O m-vless "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/menu/m-vless.sh"
 wget -O vpnpremium "https://raw.githubusercontent.com/Z0nure/update/main/vpnpremium.sh"
 wget -O wlc "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/wlc"
-wget -O info2 "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2"
+wget -O /etc/update_motd.d/69-wlc "https://raw.githubusercontent.com/Z0nure/PhantomShield/main/backup/info2"
 
-dos2unix info2
+dos2unix /etc/update_motd.d/69-wlc
 
 sleep 2
 chmod +x vpnpremium
@@ -70,11 +70,8 @@ chmod +x running
 chmod +x m-system
 chmod +x m-ssws
 chmod +x wlc
-chmod +x info2
+chmod +x /etc/update_motd.d/69-wlc
 
-if [ -e /usr/bin/info2 ] && ! grep -qxF '/usr/bin/info2' ~/.bashrc; then
-    echo '/usr/bin/info2' >> ~/.bashrc
-fi
 cd
 echo -e " [INFO] INDEX FILE HTML UPDATE"
 sleep 2
